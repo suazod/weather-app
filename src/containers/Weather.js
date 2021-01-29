@@ -108,7 +108,7 @@ class Weather extends Component {
         event.preventDefault();
         //first find lon and lat based on city/state
         //then update the states and show new city weather 
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${this.state.searchCity},${this.state.searchState},us&appid=${process.env.REACT_APP_WEATHER_KEY}`, {
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${this.state.searchCity},${this.state.searchState},us&appid=${process.env.REACT_APP_WEATHER_KEY}`, {
             method: 'GET',
             headers: { Accept: 'application/json' }
         })
